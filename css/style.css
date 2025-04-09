@@ -33,6 +33,10 @@
     height: 460px;
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     padding: 40px 72px;
   }
   
@@ -61,8 +65,10 @@
     padding: 0 24px;
   }
   
-  main {
+ .card-container {
     background-color: white;
+    display: flex;
+    flex-wrap: wrap;
     padding: 32px 72px;
   }
   
@@ -76,9 +82,8 @@
   }
   
   .card {
-    display: flex;
-    flex-direction: row;
     margin: 50px;
+    flex: 0, 1, 65%;
   }
   .img-placeholder {
     width: 355px;
@@ -89,6 +94,8 @@
   
   .card-footer {
     font-size: 14px;
+    display: flex;
+    justify-content: space-between;
   }
   
   .card-footer * {
@@ -99,6 +106,8 @@
     padding: 32px 72px 0;
     background-color: white;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
   }
   
   #subnav button {
